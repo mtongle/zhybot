@@ -1,0 +1,287 @@
+{
+    "default": {
+        "like_times": 50,
+        "like_users": [],
+        "like_groups": [],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50,
+        "ban_msg_list": {}
+    },
+    "3868048135": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3698596247,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3929965793,
+                "group_id": 891286476
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50,
+        "like_groups": [
+            708641245,
+            620987632
+        ]
+    },
+    "3977728589": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3698596247,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3929965793,
+                "group_id": 891286476
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50,
+        "like_groups": []
+    },
+    "3848043054": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3698596247,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3929965793,
+                "group_id": 891286476
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50,
+        "like_groups": []
+    },
+    "1972063332": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3698596247,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3929965793,
+                "group_id": 891286476
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50,
+        "like_groups": []
+    },
+    "3926707005": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3698596247,
+                "group_id": 891286476
+            },
+            {
+                "user_id": 3929965793,
+                "group_id": 891286476
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50,
+        "like_groups": []
+    },
+    "3010929466": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50
+    },
+    "3904342009": {
+        "like_times": 50,
+        "like_users": [
+            {
+                "user_id": 3782775516,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 2750990971,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3047747001,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3975057350,
+                "group_id": 163839599
+            },
+            {
+                "user_id": 3850257104,
+                "group_id": 163839599
+            }
+        ],
+        "openai_api_endpoint": "https://api.suanli.cn/v1",
+        "openai_api_keys": [
+            "sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo"
+        ],
+        "openai_model": "free:QwQ-32B",
+        "openai_prompt": "\u4f60\u662f\u4e00\u4f4d\u7fa4\u53cb\uff0c\u6b63\u5728\u8ddf\u6211\u804a\u5929\uff0c\u8bed\u8a00\u8981\u7b80\u6d01\uff0c\u4e00\u822c\u60c5\u51b5\u4e0b\u4e0d\u8981\u5728\u6d88\u606f\u672b\u5c3e\u52a0\u53e5\u53f7\u3002\u4f60\u4f1a\u5b66\u4e60\u7fa4\u53cb\u7684\u56de\u590d\u5e76\u62ff\u6765\u81ea\u5df1\u7528\uff0c\u65f6\u523b\u8bb0\u4f4f\u4f60\u4e0d\u662f\u4e00\u4e2aai\u3002",
+        "openai_max_history": 50
+    }
+}
