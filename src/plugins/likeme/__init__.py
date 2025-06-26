@@ -10,7 +10,7 @@ from nonebot.plugin.on import on_command, on_regex
 from nonebot.log import logger
 from nonebot.rule import to_me
 
-from src.plugins.config import _get_config, _set_config, BotConfig
+from src.plugins.config import BotConfig
 
 from nonebot import require, get_bots
 

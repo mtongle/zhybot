@@ -7,15 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="912bec3c-d0c7-4cee-943b-170f56af452f" name="Changes" comment="optimized plugin config">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="912bec3c-d0c7-4cee-943b-170f56af452f" name="Changes" comment="change the way to operate config">
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/_aichat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/_aichat/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/ban/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/ban/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/bomb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/bomb/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/cx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/cx/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/likeme/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/likeme/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "vcs.log",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -196,7 +190,7 @@
       <workItem from="1750486958179" duration="7995000" />
       <workItem from="1750506583699" duration="801000" />
       <workItem from="1750507391035" duration="7162000" />
-      <workItem from="1750853442232" duration="9390000" />
+      <workItem from="1750853442232" duration="9834000" />
     </task>
     <task id="LOCAL-00001" summary="deleted .env.*">
       <option name="closed" value="true" />
@@ -214,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750938746629</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change the way to operate config">
+      <option name="closed" value="true" />
+      <created>1750940288654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750940288654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +237,8 @@
     <MESSAGE value="deleted .env.*" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="optimized plugin config" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized plugin config" />
+    <MESSAGE value="change the way to operate config" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the way to operate config" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/zhybot$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1740187590853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/plugins/tongle-likeme" />

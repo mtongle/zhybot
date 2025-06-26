@@ -6,7 +6,7 @@ from nonebot.adapters.onebot.v11 import GROUP_ADMIN, GROUP_OWNER, GROUP_MEMBER, 
 from nonebot.permission import SUPERUSER
 from nonebot.plugin.on import on_message
 
-from src.plugins.config import _get_config, _set_config, BotConfig
+from src.plugins.config import BotConfig
 from src.plugins.utils import get_basemsg
 
 ban = on_command("ban", priority=50, permission=GROUP_OWNER | GROUP_ADMIN | SUPERUSER)
