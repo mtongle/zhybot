@@ -3,8 +3,7 @@ from nonebot.adapters.onebot.v11 import GroupMessageEvent, Message, MessageSegme
 from arclet.alconna import Alconna, Subcommand, Args, Option, Arparma
 from asyncio import sleep
 
-from ..likeme import is_calling_me
-from ..utils import get_basemsg
+from src.plugins.utils import is_calling_me, get_basemsg
 
 require("nonebot_plugin_alconna")
 from nonebot_plugin_alconna import on_alconna
