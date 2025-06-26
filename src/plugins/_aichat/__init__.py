@@ -8,23 +8,27 @@ from nonebot.params import CommandArg
 from nonebot.permission import SUPERUSER
 from nonebot.plugin.on import on_command
 from nonebot.rule import to_me
-from openai import OpenAI, OpenAIError
+from openai import OpenAI, OpenAIError, api_key
 
-from ..config import get_config, set_config
-from ..likeme import is_calling_me
+from src.plugins.config import _get_config, _set_config, BotConfig
+from src.plugins.utils import is_calling_me
 
 ai = on_message(priority=100, rule=to_me())
 
 @ai.handle()
 async def handle_ai(bot: Bot, event: GroupMessageEvent):
+    config = BotConfig(bot)
     self_id = bot.self_id
+
     if message := event.get_message().extract_plain_text():
         pass
     else:
         await ai.finish()
-    api_keys = get_config(self_id, "openai_api_keys")
+    # api_keys = _get_config(self_id, "openai_api_keys")
+    api_keys = config.get("openai_api_keys")
     client = OpenAI(
-        base_url=get_config(self_id, "openai_api_endpoint"),
+        # base_url=_get_config(self_id, "openai_api_endpoint"),
+        base_url=config.get("openai_api_endpoint"),
         api_key=random.choice(api_keys),
     )
     history_path = "history.json"
@@ -38,16 +42,19 @@ async def handle_ai(bot: Bot, event: GroupMessageEvent):
         except (json.decoder.JSONDecodeError,KeyError):
             history_all: dict[str, list] = {self_id: []}
             history: list = []
-    max_history = get_config(self_id, "openai_max_history")
+    # max_history = _get_config(self_id, "openai_max_history")
+    max_history = config.get("openai_max_history")
     if len(history) >= max_history:
         history = history[len(history)-max_history:]
     try:
         stream = client.chat.completions.create(
-            model=get_config(self_id, "openai_model"),
+            # model=_get_config(self_id, "openai_model"),
+            model=config.get("openai_model"),
             messages=[
                 {
-                   "role": "system",
-                    "content": get_config(self_id, "openai_prompt"),
+                    "role": "system",
+                    # "content": _get_config(self_id, "openai_prompt"),
+                    "content": config.get("openai_prompt"),
                 },
                 *history,
                 {
@@ -149,8 +156,11 @@ change_model = on_command("更改模型为", permission=SUPERUSER, priority=50, 
 
 @change_model.handle()
 async def handle_change_model(bot: Bot, event: GroupMessageEvent, args: Message = CommandArg()):
+    config = BotConfig(bot)
+
     if model := args.extract_plain_text():
-        set_config(bot.self_id, openai_model=model)
+        # _set_config(bot.self_id, openai_model=model)
+        config.set("openai_model", model)
         await change_model.send(Message([
             MessageSegment.reply(event.message_id),
             MessageSegment.at(event.user_id),
@@ -167,8 +177,11 @@ change_model = on_command("更改提示词为", permission=SUPERUSER, priority=5
 
 @change_model.handle()
 async def handle_change_model(bot: Bot, event: GroupMessageEvent, args: Message = CommandArg()):
+    config = BotConfig(bot)
+
     if prompt := args.extract_plain_text():
-        set_config(bot.self_id, openai_prompt=prompt)
+        # _set_config(bot.self_id, openai_prompt=prompt)
+        config.set("openai_prompt", prompt)
         await change_model.send(Message([
             MessageSegment.reply(event.message_id),
             MessageSegment.at(event.user_id),

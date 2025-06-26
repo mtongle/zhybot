@@ -1,11 +1,9 @@
 import time
 
 import pymysql
-from arclet.alconna import Alconna, Args, Option, Subcommand
+from arclet.alconna import Alconna, Args, Subcommand
 from nonebot.adapters.onebot.v11 import GroupMessageEvent, MessageSegment
-from nonebot.log import logger
-from nonebot.rule import to_me
-from nonebot_plugin_alconna import on_alconna, Query, AlconnaMatch, Match
+from nonebot_plugin_alconna import on_alconna, Query
 
 from src.plugins.utils import get_basemsg
 

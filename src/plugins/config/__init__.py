@@ -179,13 +179,13 @@ driver = get_driver()
 config_path = os.path.join(os.getcwd(), 'config.json')
 @driver.on_startup
 async def startup():
-    init_config()
+    config = GlobalConfig()
 
 @driver.on_bot_connect
 async def on_bot_connect(bot: Bot):
-    init_bot(bot)
+    config = BotConfig(bot)
 
-def set_config(self_id: str, **kwargs) -> bool:
+def _set_config(self_id: str, **kwargs) -> bool:
     try:
 
         with open(config_path, "r", encoding="utf-8") as f:
@@ -205,9 +205,9 @@ def set_config(self_id: str, **kwargs) -> bool:
 
     except (FileNotFoundError, json.decoder.JSONDecodeError):
         init_config(delete=True)
-        return set_config(self_id, **kwargs)
+        return _set_config(self_id, **kwargs)
 
-def get_config(self_id: str, key):
+def _get_config(self_id: str, key):
     with open(config_path, "r", encoding="utf-8") as f:
         try:
             return json.load(f)[self_id][key]

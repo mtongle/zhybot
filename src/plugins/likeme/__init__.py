@@ -1,7 +1,6 @@
 import asyncio
 import re
 
-from nonebot.adapters.onebot.v11 import GROUP_ADMIN
 from nonebot.adapters.onebot.v11.bot import Bot
 from nonebot.adapters.onebot.v11.event import GroupMessageEvent, MessageEvent
 from nonebot.adapters.onebot.v11.message import Message, MessageSegment
@@ -10,17 +9,15 @@ from nonebot.permission import SUPERUSER
 from nonebot.plugin.on import on_command, on_regex
 from nonebot.log import logger
 from nonebot.rule import to_me
-from watchfiles import awatch
 
-from ..config import get_config, set_config
+from src.plugins.config import _get_config, _set_config, BotConfig
 
 from nonebot import require, get_bots
 
-from ..utils import get_basemsg, is_calling_me
+from src.plugins.utils import get_basemsg, is_calling_me
 
 require("nonebot_plugin_apscheduler")
 from nonebot_plugin_apscheduler import scheduler
-# require("nonebot_plugin_alconna")
 
 
 # like_me = on_command("赞我")
@@ -59,7 +56,9 @@ async def handle_like_me(bot: Bot, event: GroupMessageEvent):
     message = event.get_message().extract_plain_text()
     command = re.findall(r"(.{1,2})我", string=message)[0]
     message_id = event.message_id
-    like_times = get_config(bot.self_id, "like_times")
+    config = BotConfig(bot)
+    # like_times = _get_config(bot.self_id, "like_times")
+    like_times = config.get("like_times")
     lts_backup = like_times
 
     await send_like(bot, user_id, like_times)
@@ -77,25 +76,20 @@ set_like_times = on_command("设置赞次数", permission=SUPERUSER, priority=50
 async def handle_set_like_times(bot: Bot, event: GroupMessageEvent, args: Message = CommandArg()):
     user_id = int(event.get_user_id())
     message_id = event.message_id
+    config = BotConfig(bot)
     try:
         like_times = int(args.extract_plain_text())
     except ValueError:
         await set_like_times.finish(Message(f"[CQ:reply,id={message_id}][CQ:at,qq={user_id}]\n无效的值！]"))
 
-    result = set_config(bot.self_id, like_times=like_times)
+    # result = _set_config(bot.self_id, like_times=like_times)
+    config.set(key="like_times", value=like_times)
 
-    if result:
-        await set_like_times.finish(
-            Message(
-                f"[CQ:reply,id={message_id}][CQ:at,qq={user_id}]\n已经成功将一次赞的次数设置为{like_times}！"
-            )
+    await set_like_times.finish(
+        Message(
+            f"[CQ:reply,id={message_id}][CQ:at,qq={user_id}]\n已经成功将一次赞的次数设置为{like_times}！"
         )
-    else:
-        await set_like_times.finish(
-            Message(
-                f"[CQ:reply,id={message_id}][CQ:at,qq={user_id}]\n在将一次赞的次数设置为{like_times}时出现错误！"
-            )
-        )
+    )
 
 
 switch_daily_like = on_command("定时赞", priority=50, rule=is_calling_me, block=True)
@@ -107,7 +101,9 @@ async def handle_switch_daily_like(bot: Bot, event: GroupMessageEvent, args: Mes
     self_id = bot.self_id
     user_id = event.user_id
     group_id = event.group_id
-    like_users: list = get_config(self_id, "like_users")
+    config = BotConfig(bot)
+    # like_users: list = _get_config(self_id, "like_users")
+    like_users = config.get("like_users")
 
     action = args.extract_plain_text()
 
@@ -125,13 +121,15 @@ async def handle_switch_daily_like(bot: Bot, event: GroupMessageEvent, args: Mes
          if user_dict['user_id'] == user_id),None):  # 找不到时返回None
             like_users.remove(finded_dict)
         like_users.append(user_config)
-        set_config(self_id, like_users=like_users)
+        # _set_config(self_id, like_users=like_users)
+        config.set(key="like_users", value=like_users)
         await switch_daily_like.finish(basemsg + [
             MessageSegment.text("成功开启每日5点定时赞！\n情况将汇报在群聊"+str(group_id))
         ])
     elif action in OFF:
         like_users.remove(user_config)
-        set_config(self_id, like_groups=like_users)
+        # _set_config(self_id, like_groups=like_users)
+        config.set(key="like_users", value=like_users)
         await switch_daily_like.finish(basemsg + [
             MessageSegment.text("成功关闭每日定时赞！")
         ])
@@ -151,7 +149,9 @@ async def handle_switch_group_daily_like(bot: Bot, event: GroupMessageEvent, arg
     self_id = bot.self_id
     # user_id = event.user_id
     group_id = event.group_id
-    like_groups: list[int] = get_config(self_id, "like_groups")
+    config = BotConfig(bot)
+    # like_groups: list[int] = _get_config(self_id, "like_groups")
+    like_groups = config.get("like_groups")
 
     action = args.extract_plain_text()
 
@@ -164,13 +164,15 @@ async def handle_switch_group_daily_like(bot: Bot, event: GroupMessageEvent, arg
                  if group == group_id), None):  # 找不到时返回None
             like_groups.remove(finded_group)
         like_groups.append(group_id)
-        set_config(self_id, like_groups=like_groups)
+        # _set_config(self_id, like_groups=like_groups)
+        config.set(key="like_groups", value=like_groups)
         await switch_daily_like.finish(basemsg + [
             MessageSegment.text("成功开启每日5点全群成员定时赞在群聊" + str(group_id) + "!!!")
         ])
     elif action in OFF:
         like_groups.remove(group_id)
-        set_config(self_id, like_groups=like_groups)
+        # _set_config(self_id, like_groups=like_groups)
+        config.set(key="like_groups", value=like_groups)
         await switch_daily_like.finish(basemsg + [
             MessageSegment.text("成功关闭每日全群成员定时赞！")
         ])
@@ -246,10 +248,16 @@ test = on_command("dailylike-test", priority=50, rule=to_me(), block=True)
 
 async def bot_daily_like(self_id: str, bot: Bot):
     logger.debug("Start dailylike on bot " + self_id)
+
     # get configs
-    like_times: int = get_config(self_id, "like_times")
-    like_users_info: list[dict[str, int]] = get_config(self_id, "like_users")
-    like_groups: list[int] = get_config(self_id, "like_groups")
+    config = BotConfig(bot)
+    # like_times: int = _get_config(self_id, "like_times")
+    # like_users_info: list[dict[str, int]] = _get_config(self_id, "like_users")
+    # like_groups: list[int] = _get_config(self_id, "like_groups")
+    like_times: int = config.get("like_times")
+    like_users_info: list[dict[str, int]] = config.get("like_users")
+    like_groups: list[int] = config.get("like_groups")
+
     logger.debug("Read config")
 
     # first operate liking groups
