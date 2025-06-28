@@ -30,7 +30,7 @@ async def handle_ban(bot: Bot, event: GroupMessageEvent):
     )
     # logger.debug("BAN received: " + str([msg for msg in event.get_message()]))
 
-autoban = on_message(permission=GROUP_MEMBER, priority=1)
+autoban = on_message(permission=GROUP_MEMBER, priority=1, block=False)
 
 @autoban.handle()
 async def handle_autoban(bot: Bot, event: GroupMessageEvent):
