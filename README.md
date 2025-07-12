@@ -43,3 +43,12 @@ It depends on [Nonebot2 framework](https://nonebot.dev).
         
         定时赞 开/关 // Enable/disable autolike at 5 pm.  
         ```
+
+- #### download music
+    - introduction:
+        Download music from official websites.
+    - usage:
+        Just send a music link and bot will automatically download and send it.
+        
+    ###### Suppport list:
+        - Netease Music (music.163.com)
