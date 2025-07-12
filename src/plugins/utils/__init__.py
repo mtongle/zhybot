@@ -2,7 +2,8 @@ from nonebot.adapters.onebot.v11 import MessageSegment, Message, GroupMessageEve
 from nonebot.log import logger
 
 def get_basemsg(event: GroupMessageEvent) -> Message:
-    basemsg = Message(f"[CQ:reply,id={event.message_id}][CQ:at,qq={event.user_id}]\n")
+    # basemsg = Message(f"[CQ:reply,id={event.message_id}][CQ:at,qq={event.user_id}]\n")
+    basemsg = Message(f"[CQ:reply,id={event.message_id}][CQ:at,qq={event.user_id}]")
     logger.debug("basemsg generated: " + str(basemsg))
     return basemsg
 
