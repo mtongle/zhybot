@@ -51,4 +51,4 @@ It depends on [Nonebot2 framework](https://nonebot.dev).
         Just send a music link and bot will automatically download and send it.
         
     ###### Suppport list:
-        - Netease Music (music.163.com)
+        Netease Music (music.163.com)
