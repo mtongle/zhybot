@@ -1,54 +1,61 @@
-# zhybot
+# 🤖 zhybot
+
+A feature-rich QQ bot built with love and technology! 
 
 ---
 
-### What is zhybot
+## 📖 What is zhybot
 
-Zhybot is a QQ bot designed for zhy, my classmate.🎉
-
-It depends on [Nonebot2 framework](https://nonebot.dev).
+Zhybot is a QQ bot designed for zhy, my classmate. 🎉  
+Built on the powerful [Nonebot2 framework](https://nonebot.dev) for reliable messaging automation.
 
 ---
 
-### How to use zhybot
+## 🚀 Features & Commands
 
-- ####  bomb (Not implemented)
-    - introduction:
-        A command for fun. Send lots of message to fill the group.
-    - usage: 
-        ``` commandline
-        bomb
-            -m|--message    // Message to send
-            -t|--times      // Times you want to send the message
-            -s|--speed      // Speed when sending message (msg/min).
-            --enable-dangerous-mode // Must be chosen when speed >= 60
-        ```
-      
-- #### cx
-    - introduction:
-        Search database for someone's information.
-    - usage:
-        ``` commandline
-        cx
-            qq      // Search phone id by qqid 
-            phone   // Search qqid by phone id
-        ```
+### 💣 bomb (Coming Soon!)
+> **Fun command to flood the group with messages**
+- **Usage:**
+  ```bash
+  bomb
+      -m|--message             # Message to send
+      -t|--times              # Number of times to send
+      -s|--speed              # Speed (messages/minute)
+      --enable-dangerous-mode # Required when speed >= 60
+  ```
 
-- #### likeme
-    - introduction:
-        Give me likes as many as possible!
-    - usage:
-        ``` commandline
-        *我     // Send some likes, reply with the word of *.
-        
-        定时赞 开/关 // Enable/disable autolike at 5 pm.  
-        ```
+### 🔍 cx
+> **Search user information in the database**
+- **Usage:**
+  ```bash
+  cx qq      # Search phone number by QQ ID
+  cx phone   # Search QQ ID by phone number
+  ```
 
-- #### download music
-    - introduction:
-        Download music from official websites.
-    - usage:
-        Just send a music link and bot will automatically download and send it.
-        
-    ###### Suppport list:
-        Netease Music (music.163.com)
+### 👍 likeme
+> **Auto-like functionality for maximum appreciation!**
+- **Usage:**
+  ```bash
+  *我                # Send likes (reply with * + any word)
+  定时赞 开/关       # Enable/disable auto-like at 5 PM
+  ```
+
+### 🎵 Download Music
+> **Download music from popular streaming platforms**
+- **Usage:**  
+  Simply send a music link and the bot will automatically download and share it! 🎶
+
+- **📋 Supported Platforms:**
+  - 🎧 Netease Music (music.163.com)
+
+---
+
+## 🤝 Contributing
+
+Feel free to submit issues and enhancement requests! 
+
+---
+
+## 📄 License
+
+This project is open source and available under the [GPL-3.0 License](LICENSE).

@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="912bec3c-d0c7-4cee-943b-170f56af452f" name="Changes" comment="add usage of music to README.md" />
+    <list default="true" id="912bec3c-d0c7-4cee-943b-170f56af452f" name="Changes" comment="add usage of music to README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <list id="05a8bf67-ea00-4267-ae0d-591c570cbfa3" name="Config" comment="">
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
     </list>
@@ -94,7 +97,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.log&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -211,6 +214,9 @@
       <workItem from="1752211675502" duration="5823000" />
       <workItem from="1752305122828" duration="4223000" />
       <workItem from="1752309354809" duration="4287000" />
+      <workItem from="1752386326190" duration="1874000" />
+      <workItem from="1752388257487" duration="229000" />
+      <workItem from="1752388495337" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="deleted .env.*">
       <option name="closed" value="true" />
