@@ -124,6 +124,21 @@ Zhybot is a feature-rich QQ bot designed for group management and entertainment.
   - Bot addressing detection
   - Selenium web automation utilities
 
+### 👨‍👩‍👧‍👦 Fuck Group Members Game
+> **Fun interactive game**
+- **Usage:**
+  ```bash
+  草群友           # Randomly select a group member
+  草群友 @someone  # Specify a target
+  草群友 [reply]   # Reply to a specific user
+  ```
+- **Features:**
+  - Random selection of suitable group members
+  - Life essence system (value accumulation)
+  - Unconsciousness mechanism (prevents over-interaction)
+  - Data statistics and leaderboard functionality
+  - Group member avatar display
+
 ---
 
 ## 🏗️ Technical Architecture
@@ -143,6 +158,7 @@ src/plugins/
 ├── bomb/             # Message bombing
 ├── config/           # Configuration management
 ├── cx/               # Database search
+├── fuck_friend/      # Fuck group members game
 ├── gen_meme/         # Meme generation
 ├── likeme/           # Auto-like system
 ├── music/            # Music downloads
