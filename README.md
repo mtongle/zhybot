@@ -139,6 +139,16 @@ Zhybot is a feature-rich QQ bot designed for group management and entertainment.
   - Data statistics and leaderboard functionality
   - Group member avatar display
 
+### GalGame Search
+> **Full Web Resource Search**
+- **Usage:**
+```bash
+  gal [keyword]
+```
+- **Features:**
+  - Full Web Resource Search
+  - Automatic Recommendation System
+
 ---
 
 ## 🏗️ Technical Architecture
